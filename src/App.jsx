@@ -130,7 +130,7 @@ const T = {
       "Saat konkreettisia, räätälöityjä ehdotuksia juuri sinun toimintaasi — täysin ilman sitoutumista",
     ],
     contact_email_label: "Sähköposti:",
-    contact_email: "casolutions.fi@gmail.com",
+    contact_email: "esimerkkierkki@gmail.com",
     copy_btn: "Kopioi osoite",
   },
   en: {
@@ -240,7 +240,7 @@ const T = {
       "You'll receive concrete, tailored suggestions for your specific operations — completely commitment-free",
     ],
     contact_email_label: "Email:",
-    contact_email: "casolutions.fi@gmail.com",
+    contact_email: "esimerkkierkki@gmail.com",
     copy_btn: "Copy address",
   }
 };
@@ -321,7 +321,7 @@ export default function CAS() {
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior:"smooth" });
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("casolutions.fi@gmail.com");
+    navigator.clipboard.writeText("esimerkkierkki@gmail.com");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -356,7 +356,7 @@ export default function CAS() {
             fontWeight:"bold", color:"black", fontSize:13, letterSpacing:"0.05em",
           }}>CAS</div>
           <div>
-            <div style={{ fontWeight:"bold", fontSize:15, lineHeight:1.2 }}>
+            <div style={{ fontWeight:"bold", fontSize:15, lineHeight:1.2, color:"#ffffff" }}>
               CustomAutomation<span style={{ color:"#00ffff" }}>Solutions</span>
             </div>
             <div style={{ fontSize:9, color:"#39ff14", letterSpacing:"0.18em", marginTop:1 }}>AI & AUTOMATION</div>
@@ -428,7 +428,7 @@ export default function CAS() {
               color:"#ccff00", fontSize:11, letterSpacing:"0.14em",
             }}>{t.disc_badge}</div>
 
-            <h2 style={{ fontSize:"clamp(26px,4vw,44px)", fontWeight:"bold", margin:"0 0 12px" }}>{t.disc_h}</h2>
+            <h2 style={{ fontSize:"clamp(26px,4vw,44px)", fontWeight:"bold", margin:"0 0 12px", color:"#ffffff" }}>{t.disc_h}</h2>
             <p style={{ fontSize:18, color:"#ccff00", fontWeight:"bold", margin:"0 0 24px" }}>{t.disc_sub}</p>
             <p style={{ fontSize:15, color:"rgba(255,255,255,0.57)", lineHeight:1.85, maxWidth:680, margin:"0 0 36px" }}>{t.disc_body}</p>
 
@@ -453,7 +453,7 @@ export default function CAS() {
               border:"1px solid rgba(0,255,255,0.28)", background:"rgba(0,255,255,0.05)",
               color:"#00ffff", fontSize:11, letterSpacing:"0.14em",
             }}>{t.srv_badge}</div>
-            <h2 style={{ fontSize:"clamp(30px,5vw,54px)", fontWeight:"bold", margin:"0 0 14px" }}>{t.srv_h}</h2>
+            <h2 style={{ fontSize:"clamp(30px,5vw,54px)", fontWeight:"bold", margin:"0 0 14px", color:"#ffffff" }}>{t.srv_h}</h2>
             <p style={{ fontSize:17, color:"rgba(255,255,255,0.45)" }}>{t.srv_sub}</p>
           </div>
 
@@ -472,7 +472,7 @@ export default function CAS() {
                 }}>
                   <Icon name={s.icon} size={22} color={expanded===i ? "#00ffff" : "#555"} />
                 </div>
-                <h3 style={{ fontSize:21, fontWeight:"bold", margin:"0 0 4px" }}>{s.title}</h3>
+                <h3 style={{ fontSize:21, fontWeight:"bold", margin:"0 0 4px", color:"#ffffff" }}>{s.title}</h3>
                 <div style={{ fontSize:12, color:"#00ffff", margin:"0 0 16px" }}>{s.sub}</div>
                 <p style={{ fontSize:13, color:"rgba(255,255,255,0.52)", lineHeight:1.75, margin:"0 0 18px" }}>{s.desc}</p>
 
@@ -534,7 +534,7 @@ export default function CAS() {
               border:"1px solid rgba(204,255,0,0.28)", background:"rgba(204,255,0,0.04)",
               color:"#ccff00", fontSize:11, letterSpacing:"0.14em",
             }}>{t.uc_badge}</div>
-            <h2 style={{ fontSize:"clamp(30px,5vw,54px)", fontWeight:"bold", margin:0 }}>{t.uc_h}</h2>
+            <h2 style={{ fontSize:"clamp(30px,5vw,54px)", fontWeight:"bold", margin:0, color:"#ffffff" }}>{t.uc_h}</h2>
           </div>
 
           <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill,minmax(260px,1fr))", gap:14 }}>
@@ -580,7 +580,7 @@ export default function CAS() {
               border:"1px solid rgba(57,255,20,0.3)", background:"rgba(57,255,20,0.05)",
               color:"#39ff14", fontSize:11, letterSpacing:"0.14em",
             }}>{t.ag_badge}</div>
-            <h2 style={{ fontSize:"clamp(26px,3.5vw,44px)", fontWeight:"bold", lineHeight:1.18, margin:"0 0 20px" }}>{t.ag_h}</h2>
+            <h2 style={{ fontSize:"clamp(26px,3.5vw,44px)", fontWeight:"bold", lineHeight:1.18, margin:"0 0 20px", color:"#ffffff" }}>{t.ag_h}</h2>
             <p style={{ fontSize:15, color:"rgba(255,255,255,0.52)", lineHeight:1.85, margin:"0 0 32px" }}>{t.ag_desc}</p>
             <div style={{ display:"flex", flexDirection:"column", gap:14 }}>
               {t.ag_bullets.map((b,i) => (
@@ -607,7 +607,7 @@ export default function CAS() {
                     }} />
                     <span style={{ fontSize:10, color:"#39ff14", letterSpacing:"0.1em" }}>LIVE</span>
                   </div>
-                  <div style={{ fontSize:14, fontWeight:"bold", marginBottom:5 }}>{ag.name}</div>
+                  <div style={{ fontSize:14, fontWeight:"bold", marginBottom:5, color:"#ffffff" }}>{ag.name}</div>
                   <div style={{ fontSize:11, color:"rgba(255,255,255,0.4)", lineHeight:1.5 }}>{ag.role}</div>
                 </div>
               ))}
@@ -632,7 +632,7 @@ export default function CAS() {
                 <div style={{ width:9, height:9, background:"#39ff14", borderRadius:"50%", animation:"livePulse 1.2s infinite" }} />
                 <span style={{ fontSize:10, color:"#39ff14", letterSpacing:"0.15em", fontWeight:"bold" }}>LIVE — ORCHESTRATOR</span>
               </div>
-              <div style={{ fontSize:16, fontWeight:"bold", marginBottom:4 }}>Orchestrator</div>
+              <div style={{ fontSize:16, fontWeight:"bold", marginBottom:4, color:"#ffffff" }}>Orchestrator</div>
               <div style={{ fontSize:12, color:"rgba(255,255,255,0.45)" }}>{t.orchestrator}</div>
             </div>
           </div>
@@ -648,7 +648,7 @@ export default function CAS() {
               border:"1px solid rgba(57,255,20,0.3)", background:"rgba(57,255,20,0.05)",
               color:"#39ff14", fontSize:11, letterSpacing:"0.14em",
             }}>{t.sec_badge}</div>
-            <h2 style={{ fontSize:"clamp(30px,5vw,54px)", fontWeight:"bold", margin:"0 0 14px" }}>{t.sec_h}</h2>
+            <h2 style={{ fontSize:"clamp(30px,5vw,54px)", fontWeight:"bold", margin:"0 0 14px", color:"#ffffff" }}>{t.sec_h}</h2>
             <p style={{ fontSize:17, color:"#39ff14", fontWeight:"bold", margin:"0 0 18px" }}>{t.sec_sub}</p>
             <p style={{ fontSize:15, color:"rgba(255,255,255,0.5)", lineHeight:1.85, maxWidth:680, margin:"0 auto" }}>{t.sec_body}</p>
           </div>
@@ -669,7 +669,7 @@ export default function CAS() {
                 }}>
                   <Icon name={p.icon} size={20} color="#39ff14" />
                 </div>
-                <h3 style={{ fontSize:15, fontWeight:"bold", margin:"0 0 10px" }}>{p.title}</h3>
+                <h3 style={{ fontSize:15, fontWeight:"bold", margin:"0 0 10px", color:"#ffffff" }}>{p.title}</h3>
                 <p style={{ fontSize:13, color:"rgba(255,255,255,0.5)", lineHeight:1.7, margin:0 }}>{p.desc}</p>
               </div>
             ))}
@@ -694,7 +694,7 @@ export default function CAS() {
               border:"1px solid rgba(0,255,255,0.28)", background:"rgba(0,255,255,0.05)",
               color:"#00ffff", fontSize:11, letterSpacing:"0.14em",
             }}>{t.contact_badge}</div>
-            <h2 style={{ fontSize:"clamp(34px,6vw,66px)", fontWeight:"bold", lineHeight:1.05, margin:"0 0 16px" }}>
+            <h2 style={{ fontSize:"clamp(34px,6vw,66px)", fontWeight:"bold", lineHeight:1.05, margin:"0 0 16px", color:"#ffffff" }}>
               {t.contact_h}
             </h2>
             <p style={{ fontSize:16, color:"rgba(255,255,255,0.45)", lineHeight:1.75, maxWidth:540, margin:"0 auto" }}>
@@ -778,7 +778,7 @@ export default function CAS() {
             fontWeight:"bold", color:"black", fontSize:12,
           }}>CAS</div>
           <div>
-            <div style={{ fontWeight:"bold", fontSize:14 }}>CustomAutomationSolutions</div>
+            <div style={{ fontWeight:"bold", fontSize:14, color:"#ffffff" }}>CustomAutomationSolutions</div>
             <div style={{ fontSize:10, color:"rgba(255,255,255,0.28)", marginTop:2 }}>{t.footer_tag}</div>
           </div>
         </div>
